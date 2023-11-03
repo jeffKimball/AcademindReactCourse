@@ -4,7 +4,7 @@ import TabButton from "./TabButton.jsx"
 import Section from "./Section.jsx"
 import Tabs from "./Tabs.jsx"
 
-export default function Examples() {
+const Examples = () => {
   const [selectedTopic, setSelectedTopic] = useState("");
 
   const handleSelect = (selectedButton) => {
@@ -62,3 +62,6 @@ export default function Examples() {
     </Section>
   )
 }
+
+
+export default Examples

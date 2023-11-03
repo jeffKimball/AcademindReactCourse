@@ -1,4 +1,4 @@
-export default function Tabs({children, buttons, buttonsContainer}) {
+const Tabs = ({children, buttons, buttonsContainer}) => {
     const CustomContainer = buttonsContainer
     return (
         <>
@@ -9,3 +9,5 @@ export default function Tabs({children, buttons, buttonsContainer}) {
         </>
     )
 }
+
+export default Tabs

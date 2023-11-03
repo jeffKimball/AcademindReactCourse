@@ -1,4 +1,4 @@
-export default function Section({title, children, ...rest}) {
+const Section = ({title, children, ...rest}) => {
     return (
         <section {...rest}>
             <h2>{title}</h2>
@@ -6,3 +6,5 @@ export default function Section({title, children, ...rest}) {
         </section>
     )
 }
+
+export default Section

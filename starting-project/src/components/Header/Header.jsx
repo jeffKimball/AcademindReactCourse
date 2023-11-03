@@ -8,7 +8,7 @@ function genRandomInt(max) {
 }
 
 
-export default function Header() {
+const Header = () => {
     const descriptiveTerm = reactDescriptions[genRandomInt(2)]
   
     return (
@@ -21,3 +21,6 @@ export default function Header() {
       </header>
     );
   }
+
+  export default  Header
+
