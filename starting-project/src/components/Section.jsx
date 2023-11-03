@@ -1,6 +1,6 @@
-const Section = ({title, children, ...rest}) => {
+const Section = ({title, children, ...props}) => {
     return (
-        <section {...rest}>
+        <section {...props}>
             <h2>{title}</h2>
             {children}
         </section>
