@@ -34,17 +34,13 @@ export default function AuthInputs() {
 
   return (
     <div id="auth-inputs">
-      <ControlContainer>
-        
+      <ControlContainer>        
           <Input
             label="Email"
             invalid={emailNotValid}
             type="email"
             onChange={(event) => handleInputChange('email', event.target.value)}
-          />
-        
-        
-          
+          />  
           <Input
             label="Password"
             invalid={passwordNotValid}
