@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 
 import logo from '../assets/logo.png';
+import { Component } from 'react';
 
 const StyledHeader = styled.header`
     display: flex;
@@ -54,3 +55,6 @@ export default function Header() {
     </StyledHeader>
   );
 }
+
+
+
