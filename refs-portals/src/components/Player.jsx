@@ -1,13 +1,14 @@
 import { useState, useRef } from 'react'
 
 
-export default function Player() {
+function Player() {
   const playerName = useRef()
 
   const [enteredPlayerName, setEnteredPlayerName] = useState('') 
 
   const handleSubmit = () => {
     setEnteredPlayerName(playerName.current.value)
+    playerName.current.value = ''
   } 
  
   const handleKeyDown = (e) => {
@@ -29,3 +30,5 @@ export default function Player() {
     </section>
   );
 }
+
+export default Player
