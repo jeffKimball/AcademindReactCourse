@@ -1,19 +1,20 @@
-import { useState, useRef } from 'react';
+import { useState, useRef } from 'react'
+
 
 export default function Player() {
   const playerName = useRef()
 
-  const [enteredPlayerName, setEnteredPlayerName] = useState('');  
+  const [enteredPlayerName, setEnteredPlayerName] = useState('') 
 
   const handleSubmit = () => {
     setEnteredPlayerName(playerName.current.value)
-  };
-
+  } 
+ 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
-      handleSubmit();
+      handleSubmit()
     }
-  };
+  }
 
   return (
     <section id="player">
