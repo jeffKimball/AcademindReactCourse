@@ -11,7 +11,7 @@ function Player() {
     playerName.current.value = ''
   } 
  
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e) => { 
     if (e.key === 'Enter') {
       handleSubmit()
     }
